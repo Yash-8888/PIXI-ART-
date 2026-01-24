@@ -5,6 +5,9 @@ const Navbar = () => {
     <nav className="Navbar">
         <img src="" alt="" />
         <h3>PIXI-ART</h3>
+        <div className="div">
+          
+        </div>
     </nav>
   )
 }
