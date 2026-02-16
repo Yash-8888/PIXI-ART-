@@ -3,13 +3,14 @@ import React from 'react'
 const Navbar = () => {
   return (
     <nav className="Navbar">
-        <img src="" alt="" />
-        <h3>PIXI-ART</h3>
-        <div className="div">
-          
+        <div className="logo">
+          <img src="" alt="" />
+          <span>PIXI ART</span>
         </div>
     </nav>
   )
 }
 
 export default Navbar
+
+
