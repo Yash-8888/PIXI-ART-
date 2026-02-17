@@ -1,13 +1,17 @@
-.Navbar{
+.Navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px 16px;
-    margin: auto 24px 24px;
     font-size: 1.1rem;
+
     position: sticky;
+    top: 0;              /* ⭐ REQUIRED */
+    z-index: 1000;       /* ⭐ stay above hero */
+
     background-color: white;
 }
+
 .nav-links{
     display: flex;
     gap: 50px;
