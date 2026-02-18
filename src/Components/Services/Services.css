@@ -7,7 +7,6 @@
 .services h2 {
   font-size: 28px;
   margin-bottom: 10px;
-  margin: z;
 }
 
 .sub-text {
@@ -26,11 +25,14 @@
 .card {
   background: #fff;
   padding: 30px 25px;
-  border-radius: 15px;
+  border-radius: 5px;
   text-align: left;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   transition: 0.3s;
-  
+  width: 600px;
+  display: flex;
+  flex-direction: column;   /* ⭐ important */
+  height: 100%;             /* ⭐ equal height */
 }
 
 
@@ -43,27 +45,32 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 15px;
   margin: 24px;
 }
 
 .card span {
   color: #ff004f;
-  font-weight: 600;
   margin: 18px;
-  margin: 18px;
-}
+  margin-top: auto;
+  }
 
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.08);
 }
 .card p{
-    margin: 18px;
-
+    margin-right: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 18px;
+    font-size: 12px;
 }
 .card h3{
     margin: 18px;
-
+    font-weight: normal;
+}
+.card span:hover{
+  cursor: pointer;
 }
