@@ -8,7 +8,7 @@ import img5 from "../../assets/gallery-5.jpeg";
 import img6 from "../../assets/gallery-6.jpeg";
 const Gallary = () => {
   return (
-    <section class="gallery">
+    <section id="gallery">
 
   <h2>Our Work</h2>
   <p>Take a look at some of our stunning transformations and see the quality of our work.</p>

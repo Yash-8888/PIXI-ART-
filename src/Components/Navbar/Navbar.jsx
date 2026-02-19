@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Navbar.css"
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
   return (
@@ -11,8 +12,8 @@ const Navbar = () => {
       <div className="nav-links">
         <ul>
           <li>Home</li>
-          <li>Services</li>
-          <li>Gallery</li>
+          <li><Link to="/services">Services</Link></li>
+          <li></li>
           <li>About</li>
           <li>Contact</li>
           <li>My Appointments</li>
