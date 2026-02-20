@@ -10,40 +10,42 @@ const Gallary = () => {
   return (
     <section id="gallery">
 
-  <h2>Our Work</h2>
-  <p>Take a look at some of our stunning transformations and see the quality of our work.</p>
+      <div className="text">
+        <h2>Our Work</h2>
+        <p>Take a look at some of our stunning transformations and see the quality of our work.</p>
+      </div>
 
-  <div class="gallery-container">
+      <div class="gallery-container">
 
-    <div class="gallery-item">
-      <img src={img1} alt=""/>
-    </div>
+        <div class="gallery-item">
+          <img src={img1} alt="" />
+        </div>
 
-    <div class="gallery-item">
-      <img src={img2}  alt=""/>
-    </div>
+        <div class="gallery-item">
+          <img src={img2} alt="" />
+        </div>
 
-    <div class="gallery-item">
-      <img src={img3}  alt=""/>
-    </div>
+        <div class="gallery-item">
+          <img src={img3} alt="" />
+        </div>
 
-    <div class="gallery-item">
-      <img src={img4}  alt=""/>
-    </div>
+        <div class="gallery-item">
+          <img src={img4} alt="" />
+        </div>
 
-    <div class="gallery-item">
-      <img src={img5}  alt=""/>
-    </div>
+        <div class="gallery-item">
+          <img src={img5} alt="" />
+        </div>
 
-    <div class="gallery-item">
-      <img src={img6}  alt="" />
-      
-    </div>
-    
+        <div class="gallery-item">
+          <img src={img6} alt="" />
 
-  </div>
+        </div>
 
-</section>
+
+      </div>
+
+    </section>
 
   )
 }

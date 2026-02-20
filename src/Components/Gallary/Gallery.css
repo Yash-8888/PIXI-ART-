@@ -7,6 +7,7 @@
 .gallery h2 {
   font-size: 28px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .gallery p {
@@ -14,11 +15,12 @@
   margin-bottom: 50px;
 }
 
-/* GRID */
+
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+  margin: 30px;
 }
 
 
@@ -35,4 +37,21 @@
   display: block;  
   transition: 0.4s;
 }
+.text{
+  margin: 25px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 
