@@ -11,15 +11,23 @@ const Contact = () => {
             </p>
 
             <div className="contact-container">
+                <div className="contact-form">
 
-                {/* LEFT SIDE */}
+                    <input type="text" placeholder="Your Name" />
+                    <input type="email" placeholder="Your Email" />
+                    <textarea placeholder="Your Message"></textarea>
+
+                    <button>Send Message</button>
+
+                </div>
+
                 <div className="contact-info">
 
                     <div className="contact-item">
                         <div className="icon">📍</div>
                         <div>
                             <h4>Address</h4>
-                            <p>123 Beauty Avenue, New York, NY</p>
+                            <p>Shop No 9B Shetye Market Parel Bhoiwada Mumbai</p>
                         </div>
                     </div>
 
@@ -27,7 +35,7 @@ const Contact = () => {
                         <div className="icon">📞</div>
                         <div>
                             <h4>Phone</h4>
-                            <p>(555) 123-4567</p>
+                            <p>+91 9664182247</p>
                         </div>
                     </div>
 
@@ -35,7 +43,7 @@ const Contact = () => {
                         <div className="icon">✉️</div>
                         <div>
                             <h4>Email</h4>
-                            <p>info@pixiart.com</p>
+                            <p>pixieartunisexsalon@gmail.com</p>
                         </div>
                     </div>
 
@@ -49,16 +57,7 @@ const Contact = () => {
 
                 </div>
 
-                {/* RIGHT SIDE – FORM */}
-                <div className="contact-form">
-
-                    <input type="text" placeholder="Your Name" />
-                    <input type="email" placeholder="Your Email" />
-                    <textarea placeholder="Your Message"></textarea>
-
-                    <button>Send Message</button>
-
-                </div>
+                
 
             </div>
 
