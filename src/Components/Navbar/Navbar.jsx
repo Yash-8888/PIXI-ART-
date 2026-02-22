@@ -1,29 +1,41 @@
-import React from 'react'
-import "./Navbar.css"
-import { Link } from 'react-scroll'
+import React, { useState } from "react";
+import "./Navbar.css";
+import menu from "../../assets/menu_img.png";
+import logo from "../../assets/icon-5.png"
 
 const Navbar = () => {
+
+  const [mobileMenu, setMobileMenu] = useState(false);
+
   return (
-    <nav className="Navbar">
-      <div className="logo">
-        <img src="" alt="" />
-        <span>✂ PIXI ART</span>
-      </div>
-      <div className="nav-links">
-        <ul>
-          <li>Home</li>
-          <li><Link to="/services">Services</Link></li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>My Appointments</li>
-          <li>Login</li>
+    <>
+      <nav className="Navbar">
+
+        <div className="logo">
+          <img className="logo-img" src={logo} alt="" />
+          <span>PIXI ART</span>
+        </div>
+
+        <ul className={mobileMenu ? "nav-links active" : "nav-links"}>
+          <li onClick={() => setMobileMenu(false)}>Home</li>
+          <li onClick={() => setMobileMenu(false)}>Services</li>
+          <li onClick={() => setMobileMenu(false)}>About</li>
+          <li onClick={() => setMobileMenu(false)}>Contact</li>
+          <button className="book-btn">Book Now</button>
         </ul>
-        <button className='book-btn'>Book Now</button>
-      </div>
-    </nav>
-  )
-}
 
-export default Navbar
+        <img
+          src={menu}
+          alt="menu"
+          className="menu-icon"
+          onClick={() => setMobileMenu(!mobileMenu)}
+        />
 
+      </nav>
 
+      {mobileMenu && <div className="overlay" onClick={() => setMobileMenu(false)}></div>}
+    </>
+  );
+};
+
+export default Navbar;
