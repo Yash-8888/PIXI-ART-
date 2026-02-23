@@ -81,13 +81,13 @@
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .service-container {
     display: block;
   }
 
   .card {
-    width: 400px;
+    width: 350px;
     gap: 0px;
     margin-bottom: 10px;
   }

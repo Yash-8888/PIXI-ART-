@@ -9,7 +9,6 @@
   z-index:1000;
 }
 
-/* LOGO */
 .logo{
   font-size:22px;
   font-weight:600;
@@ -26,7 +25,6 @@
 .logo-img{
   height: 35px;
 }
-/* DESKTOP NAV */
 .nav-links{
   display:flex;
   gap:40px;
@@ -43,15 +41,20 @@
   cursor:pointer;
 }
 
-/* MENU ICON */
+
 .menu-icon{
   width:28px;
   display:none;
   cursor:pointer;
   background-color: #2f36b0;
 }
+.Navbar ul li:hover{
+  cursor: pointer;
+  color: #ff004f;
+  font-weight: 800;
+}
 
-/* MOBILE */
+
 @media(max-width:768px){
 
   .menu-icon{
@@ -82,7 +85,7 @@
   }
 }
 
-/* OVERLAY */
+
 .overlay{
   position:fixed;
   top:0;

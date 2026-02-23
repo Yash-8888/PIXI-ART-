@@ -3,8 +3,8 @@ import "./Hero.css"
 
 const Hero = () => {
   return (
-    <section class="hero">
-      <div class="hero-content">
+    <section id="hero">
+      <div className="hero-content">
         <h4>Elevate Your Beauty Experience</h4>
 
         <h1>
@@ -12,7 +12,7 @@ const Hero = () => {
           hair styling, beauty treatments, and spa services.
         </h1>
 
-        <button class="hero-btn">Book Your Appointment</button>
+        <button className="hero-btn">Book Your Appointment</button>
       </div>
     </section>
 

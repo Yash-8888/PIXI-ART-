@@ -1,4 +1,4 @@
-.hero {
+#hero {
   height: 100vh;
   background: #000;
   display: flex;
@@ -13,13 +13,13 @@
   max-width: 900px;
 }
 
-.hero h4 {
+#hero h4 {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
-.hero h1 {
+#hero h1 {
   font-size: 22px;
   font-weight: 400;
   line-height: 1.6;
