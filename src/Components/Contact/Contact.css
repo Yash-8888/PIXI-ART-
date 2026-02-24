@@ -86,7 +86,8 @@
   }
   .contact-info{
     width: 400px;
-    
+    margin-bottom: 100px;
+    margin-left: -30px;
   }
   .icon{
     margin: 24px;
@@ -94,6 +95,9 @@
     height: 24px;
   }
   .contact-item{
-    width: 100%;
+    width: 90%;
+  }
+  .contact{
+    margin-bottom: 100px;
   }
 }
