@@ -80,14 +80,16 @@
 @media (max-width: 500px) {
   .contact-form {
     grid-template-columns: 1fr;
-    width: 400px;
+    width: 350px;
     padding-right: 24px;
-
+    font-size: 10px;
   }
+  
   .contact-info{
     width: 400px;
     margin-bottom: 100px;
     margin-left: -30px;
+    font-size: 15px;
   }
   .icon{
     margin: 24px;
