@@ -9,8 +9,8 @@ import { SignedIn, SignedOut, SignInButton, SignUpButton, useClerk, UserButton, 
 const Navbar = () => {
 
   const [mobileMenu, setMobileMenu] = useState(false);
-  const {openSignIn} = useClerk()
-  const {user} = useUser()
+  const { openSignIn } = useClerk()
+  const { user } = useUser()
 
 
   return (
@@ -52,22 +52,24 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li><button onClick={()=> openSignIn()} className="login">Login</button></li>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-          
+          {user ? <UserButton /> :
+            <li><button onClick={() => openSignIn()} className="login">Login</button></li>}
 
-          <button onClick={()=> openSignIn()} className="book-btn">Book Now</button>
+          <Link to="contact" smooth duration={500} offset={-70}
+            onClick={() => setMobileMenu(false)}>
+            <button className="book-btn">Book Now</button>
+          </Link>
+
 
         </ul>
-
+        <div className="mobile-userbutton">
+          {user ? <UserButton /> :
+            <button onClick={() => openSignIn()} className="login">Login</button>}
+        </div>
         <img
-          src={menu}
-          alt="menu"
-          className="menu-icon"
-          onClick={() => setMobileMenu(!mobileMenu)}
+          src={menu} alt="menu" className="menu-icon" onClick={() => setMobileMenu(!mobileMenu)}
         />
+
 
       </nav>
 

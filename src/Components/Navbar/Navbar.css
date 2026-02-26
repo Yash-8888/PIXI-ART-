@@ -34,8 +34,9 @@
 
 .login{
   background-color: white;
-  border: none;
   font-size: 17px;
+  size: 30px;
+  border: none;
 }
 .login:hover{
   color: #ff004f;
@@ -51,6 +52,9 @@
   cursor:pointer;
 }
 
+.mobile-userbutton{
+    display: none;
+}
 
 .menu-icon{
   width:28px;
@@ -70,7 +74,6 @@
   .menu-icon{
     display:block;
   }
-
   .nav-links{
     position:fixed;
     top:0;
@@ -84,6 +87,9 @@
     transition:0.4s;
     color:white;
   }
+  .Navbar{
+    justify-content: space-between;
+  }
 
   .nav-links.active{
     right:0;
@@ -92,6 +98,11 @@
   .book-btn{
     background:white;
     color:#2f36b0;
+  }
+  .mobile-userbutton{
+    display: flex;
+    position: relative;
+    left: 45px;
   }
 }
 
