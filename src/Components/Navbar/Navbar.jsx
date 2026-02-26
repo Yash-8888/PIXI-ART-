@@ -52,7 +52,11 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li><button onClick={()=> openSignIn()} className="login">login</button></li>
+          <li><button onClick={()=> openSignIn()} className="login">Login</button></li>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+          
 
           <button onClick={()=> openSignIn()} className="book-btn">Book Now</button>
 
