@@ -32,6 +32,16 @@
   list-style:none;
 }
 
+.login{
+  background-color: white;
+  border: none;
+  font-size: 17px;
+}
+.login:hover{
+  color: #ff004f;
+  cursor: pointer;
+}
+
 .book-btn{
   background:#ff004f;
   color:white;

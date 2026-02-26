@@ -3,10 +3,15 @@ import "./Navbar.css";
 import menu from "../../assets/menu_img.png";
 import logo from "../../assets/icon-5.png";
 import { Link } from "react-scroll";
+import { SignedIn, SignedOut, SignInButton, SignUpButton, useClerk, UserButton, useUser } from '@clerk/clerk-react';
+
 
 const Navbar = () => {
 
   const [mobileMenu, setMobileMenu] = useState(false);
+  const {openSignIn} = useClerk()
+  const {user} = useUser()
+
 
   return (
     <>
@@ -47,9 +52,9 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li>Login</li>
+          <li><button onClick={()=> openSignIn()} className="login">login</button></li>
 
-          <button className="book-btn">Book Now</button>
+          <button onClick={()=> openSignIn()} className="book-btn">Book Now</button>
 
         </ul>
 
